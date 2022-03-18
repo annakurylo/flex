@@ -1,0 +1,200 @@
+
+.wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;/*для всіє сторінки технологія флекс*/
+    flex-direction: column;
+}
+.container{
+    max-width: 1180px; /*ширина контенту*/
+    margin: 0 auto; /*по центру*/
+} 
+
+.content{
+    flex:  1 1 auto;
+    /*прижимаємо футер донизу*/
+}
+
+.hi{
+    background-color:darkseagreen;
+}
+.hi_row{
+    display: flex;
+    padding: 50px 0;/*отступ від границі контейнера hi зверху і знизу*/
+    justify-content: space-between; /*елементи розкидало по сторонам*/
+}
+.hi_body{
+    color: rgb(240, 240, 240);
+    padding:  0px 300px 0px 0px;
+}
+
+.hi_title{
+    text-shadow: 1px 0px 0 rgb(0, 0, 0.3);
+    font-size: 60px;
+    margin: 0px 0px 30px 30px;
+}
+.hi_list{
+    background: url('icon.png') 0 1px no-repeat;
+    font-size: 25px;
+    padding: 0px 0px 0px 20px;
+}
+
+.title{
+    color: rgb(53, 44, 44);
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.what{
+    padding: 50px 0;
+}
+.what_row{
+    display: flex;
+}
+.what_image{
+    flex: 0 0 366px;/*фиксирована картинка*/
+}
+.what_image img{
+    max-width: 100%;
+}
+.what_body{
+    flex: 1 1 auto;/*нефіксований блок тексту*/
+    padding: 0 0 0 38px;
+}
+.what_title{
+    margin: 0 0 36px 0;
+}
+.what_text{
+
+}
+.what_text p{
+    color: rgb(53, 44, 44);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 25px 0px;
+
+}
+
+.item{}
+
+.columns{
+    background-color:antiquewhite;
+    padding: 50px 0 20px 0;
+}
+.columns_title{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.columns_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -8px;/*лівий край колонок здвигаємо вліво. получається відступ в середині між колонками*/
+}
+.columns_column{
+    flex: 0 1 50%;/*забороняємо збільшуватися, дозволяємо зменшуватися, розміщуємо в половині екрана*/
+    margin: 0 0 30px 0;
+}
+.columns_item{
+
+}
+.item_row{
+    display: flex;
+}
+.item_image{
+    flex: 0 0 250px;
+}
+
+.item_body{
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+}
+.item_title{
+    color: rgb(53, 44, 44);
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px 0px 13px 0px;
+}
+.item_text{
+    color: rgb(53, 44, 44);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.vertical{
+    padding: 50px 0;
+}
+.vertical_title{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.vertical_body{
+    max-width: 990px; /*ширина контенту*/
+    margin: 0 auto;
+
+}
+.vertical_row{
+    display: flex;
+    margin: 0 -30px;
+}
+.vertical_column{
+    flex: 0 1 33.333%;
+    padding: 0 30px;
+    display: flex;/*розтягуємо флекс-бокс*/
+}
+.vertical_item{
+    background-color:gainsboro;
+    color: rgb(53, 44, 44);
+    border-radius: 5px;
+    border: 1px solid gainsboro;;
+    padding: 0 0 20px 0;
+    display: flex; /*Застосовуємо технологію флекс*/
+    flex-direction: column;/*перевертаємо контент*/
+}
+.vertical_subtitle{
+    padding: 12px 0;
+    font-size: 30px;
+    text-transform: uppercase;/*прописні букви*/
+    text-align: center;
+}
+.vertical_label{
+    padding: 15px 0;
+    background-color:antiquewhite;
+    color: rgb(53, 44, 44);
+    font-size: 24px;
+    text-align: center;
+}
+.vertical_text{
+    padding: 20px;
+    font-size: 17px;
+    line-height: 24px;
+    flex: 1 1 auto; /*прижимаємо кнопку донизу*/
+
+}
+.vertical_btn{
+    display: block;/*Превратит любой элемент в блочный. Этот метод часто используется для ссылок, чтобы увеличить зону их щелчка*/
+    margin: 0 20px;
+    height: 40px;
+    background-color:antiquewhite;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(53, 44, 44);
+    font-size: 18px;
+    text-decoration: none;/*убираем подчеркивание*/
+}
+
+.footer{
+    background-color:darkseagreen;
+}
+.footer_row{
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text{
+    color: rgb(240, 240, 240);
+    font-size: 24px;
+    letter-spacing: 0.3px; /*простір між буквами*/
+}
+
